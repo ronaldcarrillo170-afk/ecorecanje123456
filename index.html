@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECORECANJE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="toast"></div>
+
+  <section id="landing" class="landing">
+    <div class="bg-glow glow-one"></div>
+    <div class="bg-glow glow-two"></div>
+    <canvas id="bgCanvas" class="bg-canvas"></canvas>
+    <div class="landing-inner">
+      <div class="brand-hero">
+        <div class="logo">♻</div>
+        <div>
+          <h1>ECORECANJE</h1>
+          <p class="tag">Pequeñas acciones, grandes cambios.</p>
+        </div>
+      </div>
+
+      <div class="hero-cycle">
+        <div class="steps">
+          <div class="step">♻️ RECICLA</div>
+          <div class="arrow">↓</div>
+          <div class="step">🪙 SUMA PUNTOS</div>
+          <div class="arrow">↓</div>
+          <div class="step">🏆 SUBE EN EL RANKING</div>
+          <div class="arrow">↓</div>
+          <div class="step">🎁 CANJEA PREMIOS</div>
+          <div class="arrow">↓</div>
+          <div class="step">🌎 AYUDA AL PLANETA</div>
+        </div>
+      </div>
+
+      <div class="landing-ctas">
+        <button id="btnLogin" class="btn primary">INICIAR SESIÓN</button>
+        <button id="btnCreate" class="btn">CREAR CUENTA</button>
+        <button id="btnWhy" class="btn ghost">¿POR QUÉ RECICLAR?</button>
+      </div>
+
+      <div class="landing-footer">Plataforma escolar · Educativa · Gamificada</div>
+    </div>
+  </section>
+
+  <section id="login" class="login hidden">
+    <div class="login-card">
+      <div class="brand">
+        <b>♻</b>
+        <div>
+          <h1>ECORECANJE</h1>
+          <small>Pequeñas acciones, grandes cambios.</small>
+        </div>
+      </div>
+
+      <div class="eco-icons">🥤 → 🪙 ← 📦</div>
+      <h2>Iniciar sesión</h2>
+
+      <form id="loginForm">
+        <label>
+          Usuario o correo
+          <input id="user" name="user" required>
+        </label>
+        <label>
+          Contraseña
+          <input id="pass" name="pass" type="password" required>
+        </label>
+        <button type="submit">Entrar</button>
+      </form>
+
+      <div class="demo">
+        <b>Demo</b><br>
+        Estudiante: ronald / 1234<br>
+        Profesor: profe / 1234<br>
+        Administrador: admin / admin123
+      </div>
+    </div>
+  </section>
+
+  <div id="app" class="hidden">
+    <aside id="sidebar">
+      <div class="brand side">
+        <b>♻</b>
+        <strong>ECORECANJE</strong>
+      </div>
+      <div id="mini"></div>
+      <nav id="nav"></nav>
+      <button id="logout" class="logout">↪ Cerrar sesión</button>
+    </aside>
+
+    <main>
+      <header>
+        <button id="menu" type="button">☰</button>
+        <div>
+          <small>ECORECANJE</small>
+          <h2 id="title">Inicio</h2>
+        </div>
+        <span id="who"></span>
+      </header>
+      <div id="content"></div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+  <script src="java.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
